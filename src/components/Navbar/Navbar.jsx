@@ -72,9 +72,11 @@ const Navbar = () => {
                 <FaCartShopping size={22} />
               </button>
             </Link>
-            <button className="md:hidden" onClick={toggleMenu}>
+            {
+              menuOpen?"":<button className="md:hidden" onClick={toggleMenu}>
               <GiHamburgerMenu size={22} />
-            </button>
+            </button> 
+            }
           </div>
         </div>
       </header>
