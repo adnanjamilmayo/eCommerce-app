@@ -64,9 +64,11 @@ const Navbar = () => {
           ): null}
 
           <div className="flex justify-center items-center gap-3">
-            <button className="bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base font-semibold">
+           <Link to='/login'>
+           <button className="bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base font-semibold">
               Login
             </button>
+           </Link>
             <Link to="/cart">
               <button className="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none">
                 <FaCartShopping size={22} />
